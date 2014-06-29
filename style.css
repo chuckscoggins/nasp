@@ -1,0 +1,12 @@
+/******************************************************************
+Theme Name: NASP Child Theme
+Theme URI: http://naspweb.com/
+Description: A Wordpress theme custom built with Bootstrap 3 and Bones for NASP.
+Author: Chuck Scoggins (with Brad Huss) via Dan Brown
+Author URI: http://374Designs.com
+Template: NASP
+Version: 1.0
+
+******************************************************************/
+
+@import url("http://naspweb.com/wp-dev/wp-content/themes/NASP/library/css/style.css");
