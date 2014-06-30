@@ -7,33 +7,12 @@ Template Name: Home Page Template
 <?php get_header(); ?>
 
   <div class="container">
-    <div class="row">
-      
-		<!-- Start WOWSlider.com -->
-		
-		<!-- todo: move all styles to stylesheet, move images from original site location to new location -->
-		
-		<div style="float:left; margin-left:100px"><iframe src="http://naspweb.com/slider/index.html" style="width:685px;height:344px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe></div>
-		
-		<!-- End WowSlider -->
-		
-		<div style="float:left; max-width:317px;">
-			
-			<img src="http://www.naspweb.com/images/home/nasp_is.jpg">
-			<ul class="slider-item-box" style="max-width:302px; width:302px; height:278px; max-height:278; overflow:hidden">
-			
-			<!-- todo: make this content editable -->
-				<li class="slider-item">IS YOUR NON-PROFIT PROVIDER OF EFFECTIVE & CONVENIENT WORKPLACE SAFETY TRAINING<br><img style="width:250px; margin-left:-20px; margin-top:5px" src="http://www.naspweb.com/images/home/content/divider.jpg"></li>
-				<li class="slider-item">OFFERS 12 PROFESSIONAL & 28 TOPICAL SAFETY CERTIFICATION COURSES<br><img style="width:250px; margin-left:-20px; margin-top:5px" src="http://www.naspweb.com/images/home/content/divider.jpg"></li>
-				<li class="slider-item">USES DISTANCE EDUCATION AND CLASSROOM TRAINING TO COVER A WIDE RANGE OF UP-TO-DATE TRAINING TOPICS<br><img style="width:250px; margin-left:-20px; margin-top:5px" src="http://www.naspweb.com/images/home/content/divider.jpg"></li>
-				<li class="slider-item">ENSURES THAT SAFETY TRAINING IS EFFECTIVE & CONCISE WHILE EXCEEDING THE REQUIREMENTS OF OSHA REGULATIONS</li>
-			
-			</ul>
-			
-			
+   
+      	<div class="royal-slider-container">
+			<?php echo get_royalslider(1); ?>
 		</div>
 		
-    </div><!-- end .row-->
+   
   </div> <!-- end .container-->
 
 <div class="container home-three">

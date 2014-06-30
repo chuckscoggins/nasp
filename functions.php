@@ -34,4 +34,18 @@ register_sidebar( array(
 		'after_title' => '</h4>',
 	) );
 
+// Hide ACF menu item from the admin mene
+function hide_options_plugin_menu()
+{
+        global $current_user;
+        get_currentuserinfo();
+ 
+        if($current_user->user_login != '374Designs')
+        {
+                echo '<style type="text/css">.plugins #options-framework{display:none;}</style>';
+        }
+}
+
+add_action('admin_head', 'hide_options_plugin_menu');
+
 ?>

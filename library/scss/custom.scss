@@ -1110,6 +1110,14 @@ li:last-child.menu-item {
 	padding: 0 10px 10px 0;
 }
 
+.royalWrapper {
+	background-color: #FFF !important;
+}
+
+.royal-slider-container {
+	max-width: 1150px;
+}
+
 /*********************
 16. HOME WIDGET STYLES
 **********************/
@@ -1128,3 +1136,19 @@ li:last-child.menu-item {
 .home .textwidget {
 	padding: 8px;
 }
+
+/*********************
+17. FOOTER STYLES
+**********************/
+
+#contact-container {
+	margin: 25px 0 0 0;
+	height: 100px;
+	color: #FFF;
+	background: #000;
+}
+
+#contact-container .row {
+	margin: 25px 0 0 0;
+}
+
