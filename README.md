@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Brew 0.5
 __A Wordpress starter theme based on Bones and Bootstrap 3__
 
@@ -55,3 +56,9 @@ Providing credit where credit is due:
 * [mkoerner](http://mkoerner.de/breadcrumbs-for-wordpress-themes-with-bootstrap-3/) (breadcrumbs)
 * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 * [Jeredatch](https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress) (Custom metaboxes and fields)
+=======
+nasp
+====
+
+Site redesign for NASP
+>>>>>>> 9806bcf82051d64b7673f6e31a1f1a2c87fe56c8
