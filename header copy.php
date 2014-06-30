@@ -30,16 +30,6 @@
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		
-		<script>
-		
-		$(function(){
-			
-			$(".menu-secondary-menu-container").addClass("megamenu_container");
-			
-		});
-		
-		</script>
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
@@ -51,11 +41,48 @@
 		<!-- Font Awesome -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		
-		<!-- MegaMenu -->
-		<link href="<?php bloginfo('template_directory'); ?>/library/css/megamenu.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/megamenu_plugins.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/megamenu.min.js"></script>
-		<!-- <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/scripts.js"></script> -->
+		
+		<script type="text/javascript">
+		
+		$(document).ready(function () { //doc ready
+		
+			//Hide the giant menu on page load
+			$('#const-training-menu').hide();
+			
+			//Positions the menu when it does appear
+			var $trWidth = jQuery("#menu-item-183"),
+				trposition = $trWidth.position(),
+				trStart = $trWidth.height,
+				$trpos = $("#const-training-menu").insertAfter($trWidth);
+
+				$trpos.css({
+					position : 'absolute',
+					top : trposition.top + 40,
+					left: trposition.left,
+				});
+
+			//show menu when li is hovered
+			$('#menu-item-183, #const-training-menu').hover(function () {
+			    $('#const-training-menu').show();
+			}, function () {
+			setTimeout(function() {
+			        $('#const-training-menu').hide();
+			}, 1000);
+			});
+
+/*			//keeps giant menu visible when the menu is hovered
+			$('#const-training-menu').hover(function () {
+			    $('#const-training-menu').show();
+			}, function () {
+			    $('#const-training-menu').hide();
+			});
+*/
+		}); // end doc ready
+	
+		//todo: make script universal instead of specific to one li and one menu.
+		//todo: fix hover bug when switching between li hover to menu hover
+	
+		</script>
 
 	</head>
 
@@ -100,13 +127,11 @@
 				<div id="second-navigation-container">
 					<div id="second-navigation-container-inner" class="row">
 						<nav class="wrap clearfix">
-							<?php wp_nav_menu( array('menu'			=>		'Secondary Menu',
-													'menu_class'	=>		'menu megamenu')); ?>
+							<?php wp_nav_menu( array('menu' => 'Secondary Menu' )); ?>
 						</nav>
 							<div style="clear:both">&nbsp;</div>
 					</div>
 				</div>
-
 				
 			<!-- Third Navigation Bar -->
 				<div id="third-navigation-container">
@@ -120,9 +145,7 @@
 
 		</header> <?php // end header ?>
 		
-<!--				<ul id="const-training-menu">
-				<li>
+		
+		<div id="const-training-menu">
 				Submenu Info Here
-				</li>
-				</ul>
--->
+		</div>
