@@ -30,16 +30,6 @@
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		
-		<script>
-		
-		$(function(){
-			
-			$(".menu-secondary-menu-container").addClass("megamenu_container");
-			
-		});
-		
-		</script>
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
@@ -50,12 +40,6 @@
 		
 		<!-- Font Awesome -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		
-		<!-- MegaMenu -->
-		<link href="<?php bloginfo('template_directory'); ?>/library/css/megamenu.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/megamenu_plugins.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/megamenu.min.js"></script>
-		<!-- <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/scripts.js"></script> -->
 
 	</head>
 
@@ -100,8 +84,7 @@
 				<div id="second-navigation-container">
 					<div id="second-navigation-container-inner" class="row">
 						<nav class="wrap clearfix">
-							<?php wp_nav_menu( array('menu'			=>		'Secondary Menu',
-													'menu_class'	=>		'menu megamenu')); ?>
+							<?php wp_nav_menu( array('menu' => 'Secondary Menu')); ?>
 						</nav>
 							<div style="clear:both">&nbsp;</div>
 					</div>
