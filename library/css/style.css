@@ -6362,49 +6362,40 @@ li:last-child.menu-item {
 /*********************
 18. BIG MENU NAVIGATION STYLES
 **********************/
-/*
 #second-navigation-container {
-	width: 100%;
-	position: relative;
-}
+  width: 100%;
+  position: relative; }
 
 #second-navigation-container-inner {
-	width: 1140px;
-	margin: 0 auto;
-	overflow: visible;
-}
+  width: 1140px;
+  margin: 0 auto;
+  overflow: visible; }
 
 #menu-secondary-menu li {
-	max-width: 19%;
-	margin-right: 25px;
-	display: inline-block;
-	list-style: none;
-	vertical-align: middle;
-}
+  max-width: 19%;
+  margin-right: 25px;
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle; }
 
 #menu-secondary-menu li:last-child {
-	margin-right: 0;
-}
+  margin-right: 0; }
 
 #menu-secondary-menu li a {
-	color: #000 !important;
-}
+  color: #000 !important; }
 
 #menu-secondary-menu li ul {
-	display: none;
-}
+  display: none; }
 
 #menu-secondary-menu li:hover ul {
-	display: block;
-	background: red;
-	padding: 10px;
-	z-index: 10000;
-}
+  display: block;
+  background: red;
+  padding: 10px;
+  z-index: 10000; }
 
 .sub-menu {
-	z-index: 10000;
-}
-*/
+  z-index: 10000; }
+
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
