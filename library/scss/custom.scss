@@ -998,7 +998,7 @@ li:last-child.menu-item {
 /*********************
 14b. SECONDARY NAV CUSTOM STYLES 
 *********************/
-
+/*
 #second-navigation-container {
 	width: 100%;
 	position: relative;
@@ -1032,7 +1032,7 @@ li:last-child.menu-item {
 	z-index: 100;
 	border: 1px solid black;
 }
-
+*/
 /*********************
 14c. THIRD NAV CUSTOM STYLES 
 *********************/
@@ -1044,6 +1044,7 @@ li:last-child.menu-item {
 	height: 40px;
 	vertical-align: middle;
 	padding-top: 10px;
+	z-index: 100;
 }
 
 #third-navigation-container-inner {
@@ -1151,4 +1152,50 @@ li:last-child.menu-item {
 #contact-container .row {
 	margin: 25px 0 0 0;
 }
+ 
+/*********************
+18. BIG MENU NAVIGATION STYLES
+**********************/
+/*
+#second-navigation-container {
+	width: 100%;
+	position: relative;
+}
 
+#second-navigation-container-inner {
+	width: 1140px;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+#menu-secondary-menu li {
+	max-width: 19%;
+	margin-right: 25px;
+	display: inline-block;
+	list-style: none;
+	vertical-align: middle;
+}
+
+#menu-secondary-menu li:last-child {
+	margin-right: 0;
+}
+
+#menu-secondary-menu li a {
+	color: #000 !important;
+}
+
+#menu-secondary-menu li ul {
+	display: none;
+}
+
+#menu-secondary-menu li:hover ul {
+	display: block;
+	background: red;
+	padding: 10px;
+	z-index: 10000;
+}
+
+.sub-menu {
+	z-index: 10000;
+}
+*/

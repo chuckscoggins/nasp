@@ -34,6 +34,15 @@
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
+		
+		<script type="text/javascript">
+		
+		$(document).ready(function () {    
+			$(".menu-secondary-menu-container").addClass("dropdown");
+			$("#menu-secondary-menu").addClass("dropdown-menu");
+		});
+		
+		</script>
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
@@ -103,9 +112,3 @@
 
 		</header> <?php // end header ?>
 		
-<!--				<ul id="const-training-menu">
-				<li>
-				Submenu Info Here
-				</li>
-				</ul>
--->
