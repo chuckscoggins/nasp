@@ -12,6 +12,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<title><?php wp_title(''); ?></title>
+		
+		<meta name="description" content="The National Association of Safety Professionals is a non-profit membership organization providing training, consultative services, and third-party certifications that validate knowledge, skills and abilities in the area of workplace safety.">
+		<meta name="classification" content="NASP initially offered workplace safety in-house training on a contract basis to business and industry, train-the-trainer courses for safety professionals, specialized training for those responsible for safety in the workplace, and consultative services to business and industry. Independent study courses were developed to allow those who could not attend classroom courses to still receive NASP training. NASP now provides classroom training in business and industrial facilities and in contract facilities across the US. NASP consultants provide mock OSHA inspections, development of safety plans and programs, and other consulting services across the US.">
+		<meta name="keywords" content="petroleum safety, petroleum safety specialist, petroleum safety manager, petroleum safety administrator, workplace safety training, safety training, safety manager trainer, safety manager training, safety auditor, safety professional training, safety technician, HAZMAT, HAZWOPER training specialist, accident investigation technician, safety inspection technician, safety management specialist, advanced safety professional, certified safety training specialist, certified safety planning specialist, certified safety manager, certified safety administrator, master safety administrator, licensed safety professional, specialized safety occupations, certified safety professional, safety certifications, online certified safety professional courses, national association of safety professionals, safety courses and certifications, safety training certificate, environmental health and safety">
+		<meta name="language" content="English">
+		<meta name="copyright" content="NASP">
+		<meta name="distribution" content="Global">
+		<meta name="zipcode" content="28150">
+		<meta name="country" content="USA">
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -34,15 +43,6 @@
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
-		
-		<script type="text/javascript">
-		
-		$(document).ready(function () {    
-			$(".menu-secondary-menu-container").addClass("dropdown");
-			$("#menu-secondary-menu").addClass("dropdown-menu");
-		});
-		
-		</script>
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
