@@ -77,12 +77,17 @@
 				<!-- Search Bar -->
 				<div class="searchbar-container">
 					<div class="searchbar-container-inner">
+					<?php require('woo-cart-count.php'); ?>
 						<button class="chat-button btn btn-default"><i class="fa fa-comment"></i> Chat</button>
 						<div class="header-search"><?php get_search_form(); ?></div>
 					</div>
 					<?php bones_main_nav(); ?>
 				</div>
 				<!-- end Search Bar -->
+				
+								
+
+				
             </div>
           </div>
         </div> 
