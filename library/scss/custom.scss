@@ -226,8 +226,9 @@ and more scalable.
 
 	}  /* end current highlighters */
 
-} /* end .nav */
+	position:relative;
 
+} /* end .nav */
 
 /*********************
 08. POSTS & CONTENT STYLES
@@ -940,6 +941,8 @@ li:last-child.menu-item {
 	padding-top:0; padding-bottom:0
 }
 
+.in {background-color: #000}
+
 /* Hide Search Bar on smaller desktops, tablets, and phones */
 @media (max-width: 1200px) {
 	.searchbar-container-inner {
@@ -1002,6 +1005,7 @@ li:last-child.menu-item {
 #second-navigation-container {
     width: 100%;
     position: relative;
+    z-index: 200;
 }
  
 #second-navigation-container-inner {
@@ -1029,11 +1033,32 @@ li:last-child.menu-item {
 
 #menu-secondary-menu li ul {
 	display: none;
+	max-width: 100% !important;
 }
 
 #menu-secondary-menu li:hover ul {
 	display: block;
-	background: red; //todo make this the right color
+	background: #FFF; //todo make this the right color
+	clear:both;
+	min-height: 300px;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #000;
+	max-width: 100%;
+}
+
+#menu-secondary-menu li:hover ul li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: absolute;
+}
+
+#menu-secondary-menu li:hover ul li a {
+	display: block;
+	text-decoration: none;
+	max-width: 100%;
 }
 
 /*********************
@@ -1078,8 +1103,6 @@ li:last-child.menu-item {
 #menu-third-menu li a {
 	color: #FFF !important;
 }
-
-
 
 #const-training-menu li { // remove this when dynamic menu is inserted 
 	display: block;

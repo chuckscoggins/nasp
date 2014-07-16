@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-    <div class="container">
+      <div class="container">
 
-			<div id="content" class="clearfix row">
-
-				<div id="main" class="col-md-8 clearfix" role="main">
+        <div id="content" class="clearfix row">
+        
+          <div id="main" class="col-md-8 clearfix" role="main">
 
           <!-- UNCOMMENT FOR BREADCRUMBS
             <?php if ( function_exists('custom_breadcrumb') ) { custom_breadcrumb(); } ?> -->

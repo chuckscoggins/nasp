@@ -5758,7 +5758,8 @@ and more scalable.
 .nav {
   /* end .menu li */
   /* highlight current page */
-  /* end current highlighters */ }
+  /* end current highlighters */
+  position: relative; }
 
 /* end .nav */
 /*********************
@@ -6180,6 +6181,9 @@ li:last-child.menu-item {
   padding-top: 0;
   padding-bottom: 0; }
 
+.in {
+  background-color: #000; }
+
 /* Hide Search Bar on smaller desktops, tablets, and phones */
 @media (max-width: 1200px) {
   .searchbar-container-inner {
@@ -6232,7 +6236,8 @@ li:last-child.menu-item {
 *********************/
 #second-navigation-container {
   width: 100%;
-  position: relative; }
+  position: relative;
+  z-index: 200; }
 
 #second-navigation-container-inner {
   width: 1140px;
@@ -6253,11 +6258,30 @@ li:last-child.menu-item {
 
 /****** Make Dropdowns Work *******/
 #menu-secondary-menu li ul {
-  display: none; }
+  display: none;
+  max-width: 100% !important; }
 
 #menu-secondary-menu li:hover ul {
   display: block;
-  background: red; }
+  background: #FFF;
+  clear: both;
+  min-height: 300px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #000;
+  max-width: 100%; }
+
+#menu-secondary-menu li:hover ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  position: absolute; }
+
+#menu-secondary-menu li:hover ul li a {
+  display: block;
+  text-decoration: none;
+  max-width: 100%; }
 
 /*********************
 14c. THIRD NAV CUSTOM STYLES 
