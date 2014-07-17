@@ -106,12 +106,11 @@ function optionsframework_options() {
 		'type' => 'heading');
 		
 	$options[] = array(
-		'name' => __('Input Text Mini', 'options_check'),
-		'desc' => __('A mini text input field.', 'options_check'),
-		'id' => 'example_text_mini',
-		'std' => 'Default',
-		'class' => 'mini',
-		'type' => 'text');
+		'name' => __('Main Home Content', 'options_check'),
+		'desc' => __('Main welcome content on the home page.', 'options_check'),
+		'id' => 'main_home',
+		'std' => 'Default Text',
+		'type' => 'textarea');
 
 
 	/**
